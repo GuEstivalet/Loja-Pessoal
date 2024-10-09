@@ -1,0 +1,43 @@
+[
+    {
+      "id": "1",
+      "nome": "Brinco",
+      "preco": "99.99",
+      "descricao": "Par de brincos compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "fotos": [
+        { "src": "/src/assets/image-anel.jpg", "titulo": "Anel 1" },
+        { "src": "/src/assets/image-anel-2.jpg", "titulo": "Anel 1" }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Anel prateado",
+      "preco": "49.99",
+      "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "fotos": [
+        { "src": "/src/assets/image-anel-2.jpg", "titulo": "Anel 1" },
+        { "src": "/src/assets/image-anel.jpg", "titulo": "Anel 1" }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Anel prateado",
+      "preco": "49.99",
+      "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "fotos": [
+        { "src": "/src/assets/image-anel-2.jpg", "titulo": "Anel 1" },
+        { "src": "/src/assets/image-anel.jpg", "titulo": "Anel 1" }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Anel prateado",
+      "preco": "49.99",
+      "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "fotos": [
+        { "src": "/src/assets/image-anel-2.jpg", "titulo": "Anel 1" },
+        { "src": "/src/assets/image-anel.jpg", "titulo": "Anel 1" }
+      ]
+    }
+  ]
+  
