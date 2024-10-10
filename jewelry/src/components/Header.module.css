@@ -1,16 +1,17 @@
 .header{
     margin-bottom: 2rem;
+    border: 1px solid red;
 }
 
 .header ul{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     padding: 0px;
     list-style: none;
 }
 
 .header ul li{
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .link{
@@ -23,7 +24,7 @@
     color: black;
 }
 
-.header :global(.active),
-.link:hover{
-    background: #ddd;
-}
+.logo img {
+    width: 50px; 
+    height: auto;
+  }
