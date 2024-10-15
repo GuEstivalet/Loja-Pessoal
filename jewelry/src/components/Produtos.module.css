@@ -1,9 +1,22 @@
 .produtos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 4rem;
+    padding-top: 7rem;
 }
 
 .nome{
     margin: .5rem 0;
+}
+
+.produtos img{
+    height: 15rem;
+    width: 20rem;
+}
+
+
+@media (min-width: 620px) {
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
