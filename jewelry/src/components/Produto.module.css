@@ -24,6 +24,15 @@
 }
 
 .produto img {
-    height: 22rem;
-    width: 20rem;
+    height: 10rem;
+    width: 10rem;
+}
+
+.ativa {
+    opacity: 1;
+    scale: 1.15;
+}
+
+.imagesDisplay {
+    margin: 1rem 2rem;
 }

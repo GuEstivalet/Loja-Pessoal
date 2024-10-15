@@ -3,12 +3,17 @@ import styles from './Produto.module.css';
 import { useParams } from 'react-router-dom';
 import produtosData from '../jsons/produtos.json';
 import Head from './Head';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 const Produto = () => {
   const { id } = useParams(); // Obtém o ID do produto a partir da URL
   const [produto, setProduto] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(null);
+  const [fotoAtiva, setFotoAtiva] = React.useState(0);
 
   React.useEffect(() => {
     // Verifica se o ID está presente
@@ -32,6 +37,14 @@ const Produto = () => {
     }
   }, [id]);
 
+  const handleProximaFoto = () => {
+    setFotoAtiva((fotoAtiva + 1) % produto.fotos.length); // Vai para a próxima foto
+  };
+
+  const handleFotoAnterior = () => {
+    setFotoAtiva((fotoAtiva - 1 + produto.fotos.length) % produto.fotos.length); // Volta para a foto anterior
+  };
+
   if (error) return <p>{error}</p>;
 
   if (loading) return <div className="loading">Carregando...</div>;
@@ -41,10 +54,12 @@ const Produto = () => {
   return (
     <section className={`${styles.produto} animeLeft`}>    
       <Head title={`Ada | ${produto.nome}`} description={`Página de um produto específico.`} />
-      <div>
-        {produto.fotos.map((foto) => (
-          <img key={foto.src} src={foto.src} alt={foto.titulo} />
+      <div className={`${styles.imagesDisplay}`}>
+        {produto.fotos.map((foto,index) => (
+          <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : ''}`}/>
         ))}
+        <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
+        <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
       </div>
       <div>
         <h1>{produto.nome}</h1>
