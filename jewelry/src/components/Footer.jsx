@@ -5,18 +5,17 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; // Importa o í
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'; // Importa o ícone do Instagram
 import { faPix } from '@fortawesome/free-brands-svg-icons';
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons';
+import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      <h1>Todos direitos reservados.</h1>
-      <FontAwesomeIcon icon={faWhatsapp} />
-      <FontAwesomeIcon icon={faInstagram} />
-      <div>
-        <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
-      <FontAwesomeIcon icon={faCreditCard} />
-      <FontAwesomeIcon icon={faPix} />
-      </div>
+      <h1>Conheça nossas redes sociais</h1>
+      <div styles={{height:"1rem", width:"1rem"}}><a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a></div>
+      <div styles={{height:"1rem", width:"1rem"}}><a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a></div>
+      <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
+      <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
+      <FontAwesomeIcon className={styles.icon} icon={faPix} />
     </section>
   );
 }

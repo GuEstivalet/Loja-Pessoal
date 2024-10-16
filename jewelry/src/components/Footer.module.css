@@ -1,8 +1,31 @@
 .footer{
+    margin: 0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #aaa;
-    height: 10rem;
-    padding-top: 5rem;
+    color: #404E4D;
+    height: 12rem;
+    display:inline-block;
     box-sizing: border-box;
+    padding: 0.5rem;
+    background: #B3AF8F;
+}
+
+h1,h2 {
+        font-size: 1rem;
+    }
+
+.footer a {
+    color: #404E4D;
+    padding: 0.65rem;
+    border-radius: 50%;
+}
+
+.footer a:hover{
+    transition: 1.5s;
+    color: white;
+    background: #404E4D;
+}
+
+.icon {
+    margin:0.2rem 2rem
 }

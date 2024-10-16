@@ -61,11 +61,12 @@ const Produto = () => {
         <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
         <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
       </div>
-      <div>
+      <aside>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>
         <p className={styles.descricao}>{produto.descricao}</p>
-      </div>
+        <a href=''>Compre Aqui</a>
+      </aside>
     </section>
   );
 };

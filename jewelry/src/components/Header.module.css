@@ -6,7 +6,6 @@
     height: 5rem;
     padding: 1rem 2rem; /* Padding para espaçamento lateral e superior */
     display: flex;
-    justify-content: space-between; /* Espaça logo e links */
     align-items: center; /* Centraliza verticalmente */
   }
   
@@ -18,40 +17,34 @@
     align-items: center; /* Centraliza links e logo verticalmente */
   }
   
-  .header li {
-    padding-right: 1rem; /* Espaçamento de 1rem entre os links */
+  .header ul li {
+    margin-right: 4rem;
   }
   
-  .header li:last-child {
-    padding-right: 0; /* Remove padding no último item */
-  }
   
   .link {
     text-decoration: none;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eee;
-    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-family: "Krub";
+    padding: .5rem 0;
     border-radius: 4px;
     color: black;
   }
   
   .logo img {
-    border: 1px solid red;
     width: 5rem;
     height: auto;
   }
   
   .header .logo {
-    padding-right: 7rem; /* Padding lateral da logo */
+    padding-right: 12rem; /* Padding lateral da logo */
+  }
+
+  @media (max-width:620px) {
+    .header .logo {
+      padding-right: 8rem; /* Padding lateral da logo */
+    }
   }
   
  
   
-
-  @media (max-width: 620px){
-    .header li {
-        padding-right: 0rem; /* Espaçamento de 1rem entre os links */
-      }
-      
-  }
