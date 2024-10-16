@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <section className={styles.footer}>
       <h1>Conheça nossas redes sociais</h1>
-      <div styles={{height:"1rem", width:"1rem"}}><a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a></div>
-      <div styles={{height:"1rem", width:"1rem"}}><a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a></div>
+      <a href=''><FontAwesomeIcon className={styles.icon} icon={faWhatsapp} /></a>
+      <a href=''><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></a>
       <h2>Aceitamos dinheiro, pix e cartões de crédito</h2>
       <FontAwesomeIcon className={styles.icon} icon={faCreditCard} />
       <FontAwesomeIcon className={styles.icon} icon={faPix} />

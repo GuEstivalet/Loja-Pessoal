@@ -53,14 +53,14 @@ const Produto = () => {
 
   return (
     <section className={`${styles.produto} animeLeft`}>    
-      <Head title={`Ada | ${produto.nome}`} description={`Página de um produto específico.`} />
-      <div className={`${styles.imagesDisplay}`}>
-        {produto.fotos.map((foto,index) => (
-          <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : ''}`}/>
-        ))}
-        <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
-        <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
-      </div>
+      <Head title={`Ada | ${produto.nome}`} description={`Página informações individuais de ${produto.nome}.`} />
+        <div className={`${styles.imagesDisplay}`}>
+          {produto.fotos.map((foto,index) => (
+            <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : styles.inativas}`}/>
+          ))}
+          <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
+          <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
+        </div>
       <aside>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>

@@ -6,7 +6,7 @@
     height: 12rem;
     display:inline-block;
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 1rem;
     background: #B3AF8F;
 }
 
@@ -15,17 +15,20 @@ h1,h2 {
     }
 
 .footer a {
+    
+    margin: 1rem;
     color: #404E4D;
-    padding: 0.65rem;
-    border-radius: 50%;
+    padding: 1.1rem 0.5rem 0.5rem;
 }
 
 .footer a:hover{
+    border: 1px solid white;
     transition: 1.5s;
     color: white;
     background: #404E4D;
 }
 
 .icon {
-    margin:0.2rem 2rem
+    margin:0.2rem 2rem;
+    height: 1.4rem;
 }

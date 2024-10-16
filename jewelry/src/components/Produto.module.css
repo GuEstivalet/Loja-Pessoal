@@ -25,10 +25,6 @@
     line-height: 1.2;
 }
 
-.produto img {
-    height: 10rem;
-    width: 10rem;
-}
 .produto aside {
     display:flex;
     flex-direction: column;
@@ -45,9 +41,18 @@
     background: green;
 }
 
+.inativas {
+    margin-top: 5rem;
+    height: 20rem;
+    width: 16rem;
+}
+
 .ativa {
+    border: 1px solid red;
     opacity: 1;
     scale: 1.15;
+    height: 120px;
+    width: 100px;
 }
 
 .imagesDisplay {

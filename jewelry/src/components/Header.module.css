@@ -34,15 +34,13 @@
   .logo img {
     width: 5rem;
     height: auto;
+    margin-right: 12rem;
   }
   
-  .header .logo {
-    padding-right: 12rem; /* Padding lateral da logo */
-  }
 
   @media (max-width:620px) {
-    .header .logo {
-      padding-right: 8rem; /* Padding lateral da logo */
+    .header img {
+      margin-right: 5rem;
     }
   }
   
