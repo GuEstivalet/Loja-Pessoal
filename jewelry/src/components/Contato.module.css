@@ -13,6 +13,8 @@
 
 .contato img {
     height: 100%;
+    border: 2px solid #eee;
+    padding: .2rem;
 }
 
 .dados{

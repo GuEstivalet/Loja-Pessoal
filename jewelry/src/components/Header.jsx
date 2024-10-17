@@ -7,7 +7,7 @@ const Header = () => {
    <nav className={styles.header}>
       <ul>
         <li><NavLink className={styles.logo} to='/' end><img src='src/assets/image-logo.png'/></NavLink></li>
-        <li><NavLink className={styles.link} to='/' end>Produtos</NavLink></li>
+        <li><NavLink className={styles.link} to='/' end>Início</NavLink></li>
         <li><NavLink className={styles.link} to='contato'>Contato</NavLink></li>
       </ul>
    </nav>

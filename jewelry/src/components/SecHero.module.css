@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Compensa a largura da barra de rolagem */
+.container {
+    padding-right: calc(100vw - 100%);
+}
+
+/* Hero Section */
+.secHero {
+    margin-top: 9rem;
+    border-bottom: 3px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 5rem; /* Espaçamento extra na borda inferior */
+    width: 100%;
+    max-width: 70vw;
+    margin: 9rem auto 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Imagem */
+.secHero img {
+    height: 20rem;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 2rem;
+}
+
+/* Título */
+.secHero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Parágrafos */
+.secHero p {
+    font-family: 'Krub', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Link Botão */
+.secHero a {
+    font-family: 'Krub', sans-serif;
+    padding: 0.7rem 1rem;
+    background: #eee;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-decoration: none;
+    display: flex;              /* Flexível */
+    justify-content: center;    /* Centraliza horizontalmente */
+    align-items: center;        /* Centraliza verticalmente */
+    text-align: center;         /* Alinha o texto no centro */
+    width: fit-content;         /* Ajusta a largura ao conteúdo */
+    margin: 0 auto;             /* Centraliza o botão no container */
+}
+
+.secHero a:hover {
+    transition: 0.3s;
+    background: #aaa;
+    color: white;
+}
+
+
+/* Centraliza o botão horizontalmente */
+.secHero a {
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Efeito ao passar o mouse */
+.secHero a:hover {
+    transition: 0.3s;
+    background: #aaa;
+    color: white;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .secHero {
+        flex-direction: column;
+        padding: 1rem;
+        max-width: 90vw;
+        padding-bottom: 5rem;
+    }
+
+    .secHero img {
+        height: 15rem;
+    }
+
+    .secHero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .secHero {
+        padding: 0.5rem;
+        padding-bottom: 5rem;
+    }
+
+    .secHero h1 {
+        font-size: 2rem;
+    }
+
+    .secHero img {
+        height: 12rem;
+    }
+
+    .secHero a {
+        padding: 0.5rem 0.8rem;
+    }
+}
