@@ -10,6 +10,7 @@ const Produtos = () => {
 
   React.useEffect(() => {
     setProdutos(produtosData);
+    window.scrollTo(0,0);
   }, []);
 
   if (!produtos.length) return null;

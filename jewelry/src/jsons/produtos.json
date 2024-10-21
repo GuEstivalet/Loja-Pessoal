@@ -4,6 +4,7 @@
       "nome": "Brinco",
       "preco": "99.99",
       "descricao": "Par de brincos compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: x","Sugestão: Para ela"],
       "fotos": [
         { "src": "/src/assets/image-anel-0.jpg", "titulo": "Anel 1" },
         { "src": "/src/assets/image-anel-1.jpg", "titulo": "Anel 1" }
@@ -14,6 +15,7 @@
       "nome": "Anel prateado",
       "preco": "49.99",
       "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: x","Sugestão: Para ela"],
       "fotos": [
         { "src": "/src/assets/image-anel-0.jpg", "titulo": "Anel 1" },
         { "src": "/src/assets/image-anel-1.jpg", "titulo": "Anel 1" }
@@ -24,6 +26,7 @@
       "nome": "Anel prateado",
       "preco": "49.99",
       "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: x","Sugestão: Para ela"],
       "fotos": [
         { "src": "/src/assets/image-anel-0.jpg", "titulo": "Anel 1" },
         { "src": "/src/assets/image-anel-1.jpg", "titulo": "Anel 1" }
@@ -34,6 +37,7 @@
       "nome": "Anel prateado",
       "preco": "49.99",
       "descricao": "Anel compostos por prata 925. Uma qualidade compatível com o que você merece.",
+      "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: x","Sugestão: Para ela"],
       "fotos": [
         { "src": "/src/assets/image-anel-0.jpg", "titulo": "Anel 1" },
         { "src": "/src/assets/image-anel-1.jpg", "titulo": "Anel 1" }

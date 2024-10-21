@@ -3,8 +3,6 @@ import styles from './Produto.module.css';
 import { useParams } from 'react-router-dom';
 import produtosData from '../jsons/produtos.json';
 import Head from './Head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Produto = () => {
   const { id } = useParams(); // Obtém o ID do produto a partir da URL
@@ -31,6 +29,7 @@ const Produto = () => {
       setError(err.message);
     } finally {
       setLoading(false);
+      window.scrollTo(0,0);
     }
   }, [id]);
 
@@ -48,7 +47,7 @@ const Produto = () => {
     <section className={`${styles.produto} animeLeft`}>
       <Head title={`Ada | ${produto.nome}`} description={`Página informações individuais de ${produto.nome}.`} />
       <div className={`${styles.imagesDisplay}`}>
-        <img id="destaque" src={produto.fotos[fotoAtiva].src} alt="Imagem em destaque do produto." />
+        <img className={styles.destaque} src={produto.fotos[fotoAtiva].src} alt="Imagem em destaque do produto." />
         <div className={styles.wrapper}>
           {produto.fotos.map((foto, index) => (
             <button key={index} onClick={() => handleClick(index)}>
@@ -60,8 +59,14 @@ const Produto = () => {
       <aside>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>
+        <span className={styles.parcela}>3x sem juros de R$ {(produto.preco / 3).toFixed(2)}</span>
         <p className={styles.descricao}>{produto.descricao}</p>
-        <a href={`/comprar/${produto.id}`}>Compre Aqui</a>
+        <a href={`/comprar/${produto.id}`}>SHOP NOW</a>
+        <ul>
+          {produto.itens.map((item)=>(
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </aside>
     </section>
   );

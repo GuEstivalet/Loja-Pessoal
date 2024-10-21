@@ -3,22 +3,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 7rem;
-    border: 1px solid red;
-}
-
-.produto img{
-    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .preco {
+    text-align: center;
     margin: 0;
     padding: .5rem .5rem;
     background: #404E4D;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
-    margin: 0rem 5rem;
 }   
+
+.parcela {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
 
 .descricao{
     font-family: Arial, Helvetica, sans-serif;
@@ -43,14 +44,31 @@
 .produto aside a {
     padding: 1rem;
     border-radius: 5px;
-    background: green;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.imagesDisplay {
-    margin: 1rem 2rem;
-}
+button {
+    all: unset;
+    cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
+  }
+  
 
 .inativas {
-    width: 1rem;
-    display: flex;
+    height: 4rem;
+    width: 4rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+}
+
+.destaque {
+    width: 20rem;
+    height: 18rem;
+    margin-bottom: 2rem;
+}
+
+.produto li {
+    font-size: 1.2rem;
 }
