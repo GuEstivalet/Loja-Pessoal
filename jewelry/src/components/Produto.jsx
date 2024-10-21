@@ -4,9 +4,7 @@ import { useParams } from 'react-router-dom';
 import produtosData from '../jsons/produtos.json';
 import Head from './Head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Produto = () => {
   const { id } = useParams(); // Obtém o ID do produto a partir da URL
@@ -36,13 +34,9 @@ const Produto = () => {
     }
   }, [id]);
 
-  const handleProximaFoto = () => {
-    setFotoAtiva((fotoAtiva + 1) % produto.fotos.length); // Vai para a próxima foto
-  };
-
-  const handleFotoAnterior = () => {
-    setFotoAtiva((fotoAtiva - 1 + produto.fotos.length) % produto.fotos.length); // Volta para a foto anterior
-  };
+  function handleClick(index) {
+    setFotoAtiva(index);
+  }
 
   if (error) return <p>{error}</p>;
 
@@ -51,23 +45,23 @@ const Produto = () => {
   if (produto === null) return null;
 
   return (
-    <section className={`${styles.produto} animeLeft`}>    
+    <section className={`${styles.produto} animeLeft`}>
       <Head title={`Ada | ${produto.nome}`} description={`Página informações individuais de ${produto.nome}.`} />
-        <div className={`${styles.imagesDisplay}`}>
-          <img src={produto.fotos[0].src} alt="Imagem em destaque do produto." />
-            <div className={styles.wrapper}>
-            <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
-            {produto.fotos.map((foto,index) => (
-              <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : styles.inativas}`}/>
-            ))}
-            <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
-            </div>
+      <div className={`${styles.imagesDisplay}`}>
+        <img id="destaque" src={produto.fotos[fotoAtiva].src} alt="Imagem em destaque do produto." />
+        <div className={styles.wrapper}>
+          {produto.fotos.map((foto, index) => (
+            <button key={index} onClick={() => handleClick(index)}>
+              <img src={foto.src} alt={foto.titulo} className={styles.inativas} />
+            </button>
+          ))}
         </div>
+      </div>
       <aside>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>
         <p className={styles.descricao}>{produto.descricao}</p>
-        <a href=''>Compre Aqui</a>
+        <a href={`/comprar/${produto.id}`}>Compre Aqui</a>
       </aside>
     </section>
   );
