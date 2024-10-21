@@ -23,7 +23,6 @@ const Produto = () => {
       return;
     }
 
-    // Simula a busca dos dados do produto
     try {
       const produtoEncontrado = produtosData.find((produto) => produto.id === id);
       if (!produtoEncontrado) {
@@ -55,11 +54,14 @@ const Produto = () => {
     <section className={`${styles.produto} animeLeft`}>    
       <Head title={`Ada | ${produto.nome}`} description={`Página informações individuais de ${produto.nome}.`} />
         <div className={`${styles.imagesDisplay}`}>
-          {produto.fotos.map((foto,index) => (
-            <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : styles.inativas}`}/>
-          ))}
-          <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
-          <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
+          <img src={produto.fotos[0].src} alt="Imagem em destaque do produto." />
+            <div className={styles.wrapper}>
+            <button onClick={handleFotoAnterior}><FontAwesomeIcon icon={faChevronRight} /></button>
+            {produto.fotos.map((foto,index) => (
+              <img key={foto.src} src={foto.src} alt={foto.titulo}  className={`${ index === fotoAtiva ? styles.ativa : styles.inativas}`}/>
+            ))}
+            <button onClick={handleProximaFoto}><FontAwesomeIcon icon={faChevronLeft} /></button>
+            </div>
         </div>
       <aside>
         <h1>{produto.nome}</h1>

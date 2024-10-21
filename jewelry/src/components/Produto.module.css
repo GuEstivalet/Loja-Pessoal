@@ -1,8 +1,9 @@
-.produto{
+.produto{ 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding-top: 2rem;
+    margin-top: 7rem;
+    border: 1px solid red;
 }
 
 .produto img{
@@ -28,7 +29,11 @@
 .produto aside {
     display:flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: 1px solid black;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px;
+    background: #fffaf0;
 }
 
 .produto aside h1 {

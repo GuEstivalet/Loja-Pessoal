@@ -1,92 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-/* Compensa a largura da barra de rolagem */
-.container {
-    padding-right: calc(100vw - 100%);
-}
-
-/* Hero Section */
 .secHero {
-    margin-top: 9rem;
-    border-bottom: 3px solid #eee;
+    padding-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    padding-bottom: 5rem; /* Espaçamento extra na borda inferior */
-    width: 100%;
-    max-width: 70vw;
-    margin: 9rem auto 0;
     flex-wrap: wrap;
     gap: 2rem;
+    box-sizing: border-box;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    margin-top: 9rem;
+    border-bottom: 3px solid #eee;
 }
 
-/* Imagem */
+/* Estilo da Imagem no Hero */
 .secHero img {
     height: 20rem;
     max-width: 100%;
     object-fit: cover;
-    margin: 0 2rem;
 }
 
-/* Título */
+/* Título do Hero */
 .secHero h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
-    margin-bottom: 0.5rem;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-/* Parágrafos */
+/* Parágrafos do Hero */
 .secHero p {
     font-family: 'Krub', sans-serif;
-    margin-bottom: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-/* Link Botão */
+/* Botão do Hero */
 .secHero a {
     font-family: 'Krub', sans-serif;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.5rem;
     background: #eee;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     text-decoration: none;
-    display: flex;              /* Flexível */
-    justify-content: center;    /* Centraliza horizontalmente */
-    align-items: center;        /* Centraliza verticalmente */
-    text-align: center;         /* Alinha o texto no centro */
-    width: fit-content;         /* Ajusta a largura ao conteúdo */
-    margin: 0 auto;             /* Centraliza o botão no container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    transition: 0.3s;
 }
 
 .secHero a:hover {
-    transition: 0.3s;
     background: #aaa;
     color: white;
 }
 
-
-/* Centraliza o botão horizontalmente */
-.secHero a {
-    margin: 0 auto; /* Centraliza horizontalmente */
-}
-
-/* Efeito ao passar o mouse */
-.secHero a:hover {
-    transition: 0.3s;
-    background: #aaa;
-    color: white;
-}
-
-/* Media Queries para Responsividade */
+/* Responsividade para Tablets */
 @media (max-width: 768px) {
     .secHero {
         flex-direction: column;
         padding: 1rem;
-        max-width: 90vw;
-        padding-bottom: 5rem;
     }
 
     .secHero img {
@@ -98,18 +73,18 @@
     }
 }
 
+/* Responsividade para Dispositivos Pequenos */
 @media (max-width: 480px) {
     .secHero {
         padding: 0.5rem;
-        padding-bottom: 5rem;
-    }
-
-    .secHero h1 {
-        font-size: 2rem;
     }
 
     .secHero img {
         height: 12rem;
+    }
+
+    .secHero h1 {
+        font-size: 2rem;
     }
 
     .secHero a {

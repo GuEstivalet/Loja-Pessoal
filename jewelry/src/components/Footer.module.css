@@ -3,11 +3,12 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #404E4D;
-    height: 12rem;
-    display:inline-block;
+    height: 13rem;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 2rem;
     background: #B3AF8F;
+    width: 100%;
+    max-width: 100vw;
 }
 
 h1,h2 {

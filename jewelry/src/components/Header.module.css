@@ -1,11 +1,11 @@
 .header {
     position: fixed;
     z-index: 100;
-    background: white;
+    background: #fffaf0;
     width: 100%;                /* Garante que o header ocupe toda a largura */
     max-width: 100vw;            /* Previne overflow além da largura da tela */
     height: 5rem;
-    padding: 1rem 2rem; /* Padding para espaçamento lateral e superior */
+    padding: 1rem 3rem; /* Padding para espaçamento lateral e superior */
     display: flex;
     align-items: center; /* Centraliza verticalmente */
   }
@@ -27,20 +27,22 @@
     text-decoration: none;
     font-size: 1rem;
     font-family: "Krub";
-    padding: .5rem 0;
     border-radius: 4px;
     color: black;
   }
-  
+ 
+
+  .logo {
+    margin-right:12rem;
+  }
+
   .logo img {
     width: 5rem;
-    height: auto;
-    margin-right: 12rem;
   }
   
 
   @media (max-width:620px) {
-    .header img {
+    .logo {
       margin-right: 5rem;
     }
   }
