@@ -19,8 +19,9 @@
 }
 
 .produtos img{
-    height: 16rem;
+    height: 12rem;
     width: 12rem;
+    object-fit:fill;
     border-bottom: 2px solid #eee;
     border-right:  2px solid #eee;;
     padding: 0.3rem;

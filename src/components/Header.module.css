@@ -42,9 +42,14 @@
   
 
   @media (max-width:620px) {
+
+    .header{
+      padding: 1rem 1rem;
+    }
     .logo {
       margin-right: 5rem;
     }
+
   }
   
  

@@ -27,12 +27,3 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0.8rem;
 }
-
-.dados li::before{
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 2px;
-    background: #ddd;
-    margin-right: 10px;
-}

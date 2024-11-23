@@ -50,6 +50,19 @@
     text-align: center;
 }
 
+.imagesDisplay{
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+    }
+
+.wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: auto; 
+    }
+
 button {
     all: unset;
     cursor: pointer; /* opcional: adiciona o ponteiro de mão ao passar o mouse */
@@ -64,11 +77,45 @@ button {
 }
 
 .destaque {
-    width: 20rem;
+    width: 16rem;
     height: 18rem;
     margin-bottom: 2rem;
 }
 
 .produto li {
     font-size: 1.2rem;
+}
+
+.descricao {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+@media (max-width:620px) {
+    .produto{
+        grid-template-columns: 1fr;
+    }
+
+    .imagesDisplay{
+    justify-content: center; 
+    align-items: center;
+    margin: auto; 
+    }
+
+    .wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: auto; 
+    }
+
+    aside {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .produto li {
+        padding: 0.3rem;
+        font-size: 1.2rem;
+    }
 }

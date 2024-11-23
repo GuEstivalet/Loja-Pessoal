@@ -61,7 +61,7 @@ const Produto = () => {
         <span className={styles.preco}>R$ {produto.preco}</span>
         <span className={styles.parcela}>3x sem juros de R$ {(produto.preco / 3).toFixed(2)}</span>
         <p className={styles.descricao}>{produto.descricao}</p>
-        <a href={`/comprar/${produto.id}`}>SHOP NOW</a>
+        <a href={`https://wa.me/5399820595/?text=Ol%C3%A1,%20vim%20pelo%20site!%20Tenho%20interesse%20pelo(a) ${produto.nome}.`}>Adquira agora!</a>
         <ul>
           {produto.itens.map((item)=>(
             <li key={item}>{item}</li>

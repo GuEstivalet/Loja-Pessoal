@@ -39,7 +39,7 @@
 /* Botão do Hero */
 .secHero a {
     font-family: 'Krub', sans-serif;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 1.5rem;
     background: #eee;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -76,7 +76,8 @@
 /* Responsividade para Dispositivos Pequenos */
 @media (max-width: 480px) {
     .secHero {
-        padding: 0.5rem;
+        padding: 1rem;
+        padding-bottom: 2rem;
     }
 
     .secHero img {

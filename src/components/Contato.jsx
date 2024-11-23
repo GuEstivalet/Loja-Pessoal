@@ -15,8 +15,8 @@ const Contato = () => {
       <div>
       <h1>Entre em contato.</h1>
       <ul className={styles.dados}>
-        <li>estivalet61@gmail.com</li>
-        <li>(53)98144-7700</li>
+        <li>adaofficialloja@gmail.com</li>
+        <li>(53) 9982-0595</li>
       </ul>
       </div>
     </section>
