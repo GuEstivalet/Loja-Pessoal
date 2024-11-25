@@ -6,9 +6,9 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Circunferência: 45cm","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/ColarCircularCravejadoPerto.jpg", "titulo": "Colar Circulo Cravejado" },
-        { "src": "/public/assets/produtos/ColarCircularCravejado.jpg", "titulo": "Colar Circulo Cravejado" },
-        { "src": "/public/assets/produtos/ColarCircularCravejadoTerceiro.jpg", "titulo": "Colar Circulo Cravejado" }
+        { "src": "/assets/produtos/ColarCircularCravejadoPerto.jpg", "titulo": "Colar Circulo Cravejado" },
+        { "src": "/assets/produtos/ColarCircularCravejado.jpg", "titulo": "Colar Circulo Cravejado" },
+        { "src": "/assets/produtos/ColarCircularCravejadoTerceiro.jpg", "titulo": "Colar Circulo Cravejado" }
       ]
     },
     {
@@ -18,8 +18,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Circunferência: 45cm","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/ColarSnakePerto.jpg", "titulo": "Colar Snake" },
-        { "src": "/public/assets/produtos/ColarSnakeLonge.jpg", "titulo": "Colar Snake" }
+        { "src": "/assets/produtos/ColarSnakePerto.jpg", "titulo": "Colar Snake" },
+        { "src": "/assets/produtos/ColarSnakeLonge.jpg", "titulo": "Colar Snake" }
       ]
     },
     {
@@ -29,8 +29,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Aço inoxidável", "Garantia: 3 meses", "Medida aprox.: 53mm","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/AnelSolPerto.jpg", "titulo": "Anel Sol" },
-        { "src": "/public/assets/produtos/AnelSol.jpg", "titulo": "Anel Sol" }
+        { "src": "/assets/produtos/AnelSolPerto.jpg", "titulo": "Anel Sol" },
+        { "src": "/assets/produtos/AnelSol.jpg", "titulo": "Anel Sol" }
       ]
     },
     {
@@ -40,8 +40,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: Ajustável","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/AnelCravejadoPerto.jpg", "titulo": "Anel Cravejado prateado" },
-        { "src": "/public/assets/produtos/AnelCravejadoDetalhe.jpg", "titulo": "Anel Cravejado prateado" }
+        { "src": "/assets/produtos/AnelCravejadoPerto.jpg", "titulo": "Anel Cravejado prateado" },
+        { "src": "/assets/produtos/AnelCravejadoDetalhe.jpg", "titulo": "Anel Cravejado prateado" }
       ]
     },
     {
@@ -51,8 +51,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: 1cm","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/BrincoCravejado.jpg", "titulo": "Brinco com Brilhantes" },
-        { "src": "/public/assets/produtos/BrincoCravejadoPerto.jpg", "titulo": "Brinco com Brilhantes" }
+        { "src": "/assets/produtos/BrincoCravejado.jpg", "titulo": "Brinco com Brilhantes" },
+        { "src": "/assets/produtos/BrincoCravejadoPerto.jpg", "titulo": "Brinco com Brilhantes" }
       ]
     },
     {
@@ -62,8 +62,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: Ajustável","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/AnelMeiaLuaPerto.jpg", "titulo": "Anel Meia Lua" },
-        { "src": "/public/assets/produtos/AnelMeiaLuaLonge.jpg", "titulo": "Anel Meia Lua" }
+        { "src": "/assets/produtos/AnelMeiaLuaPerto.jpg", "titulo": "Anel Meia Lua" },
+        { "src": "/assets/produtos/AnelMeiaLuaLonge.jpg", "titulo": "Anel Meia Lua" }
       ]
     },
     {
@@ -73,8 +73,8 @@
       "descricao": "A Ada garante seus produtos contra defeitos de fabricação por 180 dias. Excluem-se da garantia: desgastes provocados por choques, arranhões, polimento com produtos abrasivos, peças quebradas, arrebentadas ou incompletas, além de pedras e gravações.",
       "itens": ["Material: Prata 925", "Garantia: 3 meses", "Medida aprox.: 2cm","Sugestão: Para ela"],
       "fotos": [
-        { "src": "/public/assets/produtos/BrincoMeiaLuaPerto.jpg", "titulo": "Brinco Meia Lua" },
-        { "src": "/public/assets/produtos/BrincoMeiaLuaLonge.jpg", "titulo": "Brinco Meia Lua" }
+        { "src": "/assets/produtos/BrincoMeiaLuaPerto.jpg", "titulo": "Brinco Meia Lua" },
+        { "src": "/assets/produtos/BrincoMeiaLuaLonge.jpg", "titulo": "Brinco Meia Lua" }
       ]
     }
   ]
