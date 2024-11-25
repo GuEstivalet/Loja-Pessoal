@@ -11,7 +11,7 @@ const Contato = () => {
   return (
     <section className={`${styles.contato} animeLeft`}>
       <Head title="Ada | Contato" description='Entre em contato' />
-      <img src='src/assets/image-contato.jpg' alt="imagem"/>
+      <img src='public/assets/image-contato.jpg' alt="imagem"/>
       <div>
       <h1>Entre em contato.</h1>
       <ul className={styles.dados}>
